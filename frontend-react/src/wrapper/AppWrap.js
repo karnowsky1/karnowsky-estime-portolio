@@ -13,7 +13,6 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
         </div>
       </div>
       <NavigationDots active={idName} />
-      {console.log('are we getting here?')}
     </div>
     
   )

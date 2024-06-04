@@ -6,9 +6,6 @@ import { AppWrap } from '../../wrapper';
 import { urlFor, client } from '../../client'
 import './Work.scss';
 
-
-import './Work.scss'
-
 const Work = () => {
 
   const [activeFilter, setActiveFilter] = useState('All');
@@ -62,7 +59,6 @@ const Work = () => {
       transition={{duration: 0.5, delayChildren: 0.5}}
       className='app__work-portfolio'
     >
-      {console.log(filterWork)}
       {filterWork.map((work, index) => (
         <div className='app__work-item app__flex' key={index}>
           <div className='app__work-img app__flex'>
