@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client'
 import './Skills.scss'
 
@@ -31,7 +31,7 @@ const Skills = () => {
     <>
     <h2 className='head-text'>Skills & Experience</h2>
     <div className='app__skills-container'>
-      {console.log(skills)}
+      {/* {console.log(skills)} */}
       <motion.div className='app__skills-list'>
         {skills.map((skill, index) => (
           <motion.div
@@ -47,12 +47,12 @@ const Skills = () => {
           </motion.div>
         ))}
       </motion.div>
-      {console.log(experiences)}
-      <motion.div className='app__skills-experience'>
+      {/* {console.log(experiences)} */}
+      <motion.div className='app__skills-exp'>
         {experiences?.map((experience, index) => (
           <>
             <motion.div
-              className='app_skills-exp-item'
+              className='app__skills-exp-item'
               key={`${experience.year}-${index}`}
             >
               <div className='app__skills-exp-year'>
@@ -92,4 +92,8 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default AppWrap(
+  MotionWrap(Skills, 'app__skills'), 
+  'skills',
+  'app__whitebg'
+);
