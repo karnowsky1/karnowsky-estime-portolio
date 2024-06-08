@@ -30,7 +30,8 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import swift from '../assets/swift.png'
+import swift from '../assets/swift.png';
+import trio from '../assets/trio-iphone-ipad-mac.png'
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
@@ -68,6 +69,7 @@ export default {
   skype,
   swift,
   spotify,
+  trio,
   typescript,
   vue,
 };

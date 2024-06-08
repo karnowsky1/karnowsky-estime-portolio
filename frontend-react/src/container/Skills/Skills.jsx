@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 import { IoBriefcaseOutline as WorkIcon } from 'react-icons/io5';
 import { PiGraduationCap as SchoolIcon } from 'react-icons/pi';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client'
 import './Skills.scss'
 import 'react-vertical-timeline-component/style.min.css'
 
 import './Skills.scss'
+//TODO: Replace the TS image on the backed
+//TODO: Solve skills key console issue
 const Skills = () => {
 
   const [experiences, setExperiences] = useState([]);
@@ -53,7 +54,7 @@ const Skills = () => {
         ))}
       </motion.div>
     </div>
-    <h1>Experience TimeLine</h1>
+    <h1 className='app__experience-header'>Experience TimeLine</h1>
     <VerticalTimeline
       animate={true}
       lineColor='#edf2f8'

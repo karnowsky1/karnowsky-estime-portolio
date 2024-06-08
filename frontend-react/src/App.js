@@ -18,5 +18,6 @@ const App = () => {
     </div>
   )
 }
+// TODO: Organize all imports accross the application
 
 export default App;

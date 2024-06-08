@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.app__testimonial-header {
+  margin-bottom: 2.5rem;
+}
+
 .app__testimonial-item {
   width: 60%;
   min-height: 320px;
@@ -64,6 +68,7 @@
     font-weight: 600;
     color: var(--secondary-color);
     margin-top: 2rem;
+    //TODO: check out the spacing of this on mobile
   }
 }
 

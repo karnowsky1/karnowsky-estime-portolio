@@ -17,6 +17,7 @@ const scaleVariants = {
 }
 
 // const HeaderWithAppWrap = AppWrap(Header, 'home');
+// TODO: change the pofile picture for the header, favicon, and logo
 
 const Header = () => {
   return (
@@ -47,7 +48,7 @@ const Header = () => {
         transition={{duration: 0.5, delayChildren: 0.5}}
         className='app__header-image'
       >
-        <img src={images.profile} alt="profile_bg" />
+        <img src={images.trio} alt="profile_bg" />
         <motion.img
           whileInView={{scale: [0,1]}}
           transition={{duration: 1, ease: 'easeInOut'}}
